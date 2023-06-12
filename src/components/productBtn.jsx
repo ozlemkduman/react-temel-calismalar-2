@@ -1,7 +1,7 @@
-const ProductCardBtn = ({proId, handleClickBtn}) => <button 
-  className="outline"
-  onClick={() => handleClickBtn(proId)}
-  >Sec.. {proId}
-</button>
+const ProductCardBtn = ({ proId, handleClickBtn }) => (
+  <button className="outline" onClick={() => handleClickBtn(proId)}>
+    Seç
+  </button>
+);
 
-export default ProductCardBtn
+export default ProductCardBtn;

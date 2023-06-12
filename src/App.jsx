@@ -18,7 +18,6 @@ function App() {
     selectedProduct.isActive = true;
     setIsActiveProduct(selectedProduct);
 
-
     const notSelectedProduct = productsArray
       .filter((item) => item.id !== proId)
       .map((item) => {
@@ -36,7 +35,7 @@ function App() {
   }
   return (
     <>
-      <main className="container" style={{marginTop:"25px"}}>
+      <main className="container" style={{ marginTop: "25px" }}>
         {isActiveProduct ? (
           <img src={isActiveProduct.imgName} />
         ) : (
